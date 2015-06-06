@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lee.tony.forlee" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <!--制定该activity是程序的入口-->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 指定加载该应用时运行的activity-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+    <!--指明程序需要的权限-->
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+</manifest>
